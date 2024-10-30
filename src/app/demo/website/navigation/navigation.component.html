@@ -1,0 +1,39 @@
+<!-- Navbar usando Angular Material -->
+<nav
+  id="mainNavbar"
+  class="fixed-top navbar p-3 nav-content"
+  [class.fixed]="isFixed"
+  [@toolbarAnimation]="isFixed ? 'fixed' : 'static'"
+  [ngClass]="{ hidden: isHidden, visible: !isHidden }"
+>
+  <!-- Logo o nombre de la página -->
+  <a class="navbar-brand" href="#">
+    <img src="../../../../assets/images/logo.svg" alt="Logo ferridescuentos" />
+  </a>
+
+  <!-- Menus -->
+  <div class="navbar-items navbar-expand">
+    <ul class="navbar-nav me-auto flex-row">
+      @for (item of navigationItems; track $index) {
+        @if (item.type === "item") {
+          <app-item [item]="item" ></app-item>
+        }
+
+        @if (item.type === "dropdown") {
+          <app-item-dropdown [item]="item" ></app-item-dropdown>
+        }
+
+        @if(item.type === "categories") {
+          <app-categories [item]="item" ></app-categories>
+        }
+      }
+    </ul>
+  </div>
+
+  <!-- Burguer -->
+  <!-- <button (click)="toggleSidebar()" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button> -->
+</nav>
+
+<div style="height: 1500px; background-color: black"></div>

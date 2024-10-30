@@ -1,0 +1,74 @@
+.nav-link:hover {
+  color: var(--color-lightgray);
+}
+
+// Dropdown
+.nav-item {
+  position: relative;
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    z-index: 1000;
+    min-width: 500px;
+    padding: 0.5rem 0;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Muestra el menú cuando el dropdown está en hover */
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Dropdown básico con hover */
+.basic-dropdown {
+  .dropdown-menu {
+    width: 150px;
+  }
+}
+
+/* Dropdown avanzado en múltiples columnas */
+.advanced-dropdown {
+  .dropdown-menu {
+    width: 300px;
+    /* Ocupa todo el ancho deseado */
+    padding: 1rem;
+
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .col {
+      flex: 1;
+      padding: 0 1rem;
+
+      .dropdown-header {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .dropdown-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        color: #666;
+        text-align: center;
+
+        &:hover {
+          background-color: #f0f0f0;
+          color: #333;
+        }
+      }
+    }
+  }
+
+}

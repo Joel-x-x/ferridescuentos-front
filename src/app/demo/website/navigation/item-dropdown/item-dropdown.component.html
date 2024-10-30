@@ -1,0 +1,14 @@
+<!-- Dropdown Básico con Hover -->
+<!-- TODO: Finished the dropdown and do dynamic -->
+<li class="nav-item dropdown basic-dropdown">
+  <a class="nav-link dropdown-toggle" [routerLink]="item.url" role="button">
+    <i [ngClass]="item.icon"></i>
+    {{ item.title }}
+  </a>
+  <ul class="dropdown-menu">
+    @for (subitem of item.children; track $index) {
+      <li><a class="dropdown-item text-center" href="#">{{ subitem.title }}</a></li>
+    }
+
+  </ul>
+</li>

@@ -1,0 +1,35 @@
+// Items
+.nav-link:hover {
+  color: var(--color-lightgray);
+}
+
+// Dropdown
+.nav-item {
+  position: relative;
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    z-index: 1000;
+    min-width: 200px;
+    padding: 0.5rem 0;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Muestra el menú cuando el dropdown está en hover */
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Dropdown básico con hover */
+.basic-dropdown {
+  .dropdown-menu {
+    width: 150px;
+  }
+}
