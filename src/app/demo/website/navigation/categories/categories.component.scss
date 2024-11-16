@@ -1,5 +1,14 @@
+// Items
+.nav-link {
+  color: var(--blue-gray);
+}
+
 .nav-link:hover {
-  color: var(--color-lightgray);
+  color: var(--color-secondary);
+}
+
+.nav-link:focus {
+  color: var(--color-secondary);
 }
 
 // Dropdown
@@ -7,13 +16,14 @@
   position: relative;
 
   .dropdown-menu {
+    min-width: 200px;
+    overflow-y: scroll;
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 100px;
+    transform: translate(-38%);
     left: 50%;
-    transform: translateX(-50%); /* Centrado horizontal */
     z-index: 1000;
-    min-width: 500px;
     padding: 0.5rem 0;
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -25,50 +35,55 @@
   &:hover .dropdown-menu {
     display: block;
   }
-}
 
-/* Dropdown básico con hover */
-.basic-dropdown {
-  .dropdown-menu {
-    width: 150px;
+  .space-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text);
+    opacity: 75%;
+    border-radius: 20px;
   }
 }
 
 /* Dropdown avanzado en múltiples columnas */
 .advanced-dropdown {
   .dropdown-menu {
-    width: 300px;
+    width: 80%;
     /* Ocupa todo el ancho deseado */
     padding: 1rem;
 
-    .row {
-      display: flex;
-      flex-wrap: nowrap;
+    .dropdown-header {
+      // text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
     }
 
-    .col {
-      flex: 1;
-      padding: 0 1rem;
+    .dropdown-item {
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      color: var(--color-text);
+      // text-align: center;
 
-      .dropdown-header {
-        font-size: 0.9rem;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 0.5rem;
-      }
-
-      .dropdown-item {
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
-        color: #666;
-        text-align: center;
-
-        &:hover {
-          background-color: #f0f0f0;
-          color: #333;
-        }
+      &:hover {
+        background-color: #f0f0f0;
+        color: var(--color-text);
       }
     }
   }
+}
 
+
+// Grid
+.grid-container {
+  display: grid;
+  gap: 20px;
+  /* Espacio entre los cuadros */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Ajusta minmax para cambiar el ancho mínimo de los cuadros */
+}
+
+.grid-item {
+  padding: 10px;
 }

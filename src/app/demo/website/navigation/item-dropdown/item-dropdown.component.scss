@@ -1,6 +1,14 @@
 // Items
+.nav-link {
+  color: var(--blue-gray);
+}
+
 .nav-link:hover {
-  color: var(--color-lightgray);
+  color: var(--color-secondary);
+}
+
+.nav-link:focus {
+  color: var(--color-secondary);
 }
 
 // Dropdown
@@ -19,12 +27,20 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+    .dropdown-item {
+      &:active {
+        background-color: var(--color-secondary);
+      }
+    }
   }
 
   /* Muestra el menú cuando el dropdown está en hover */
   &:hover .dropdown-menu {
     display: block;
   }
+
 }
 
 /* Dropdown básico con hover */

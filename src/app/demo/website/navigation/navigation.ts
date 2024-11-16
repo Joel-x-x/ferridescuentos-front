@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 export interface NavigationItem {
   id: string;
   title: string;
-  type: 'item' | 'dropdown' | 'categories';
+  type: 'item' | 'dropdown' | 'categories' | 'title';
   icon?: string;
   url?: string;
   classes?: string;
@@ -56,19 +56,159 @@ export class Navigation {
       url: '/servicios',
       children: [
         {
-          id: 'producto1',
-          title: 'Producto 1',
-          type: 'item',
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
           icon: 'ti ti-smart-home',
-          url: '/producto1',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
         },
         {
-          id: 'producto2',
-          title: 'Producto 2',
-          type: 'item',
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
           icon: 'ti ti-smart-home',
-          url: '/producto2',
-        }
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
+        {
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
+          icon: 'ti ti-smart-home',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
+        {
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
+          icon: 'ti ti-smart-home',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
+        {
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
+          icon: 'ti ti-smart-home',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
+        {
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
+          icon: 'ti ti-smart-home',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
+        {
+          id: 'categoria1',
+          title: 'Categoria 1',
+          type: 'title',
+          icon: 'ti ti-smart-home',
+          children: [
+            {
+              id: 'producto1',
+              title: 'Producto 1',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+            {
+              id: 'producto2',
+              title: 'Producto 2',
+              type: 'item',
+              icon: 'ti ti-smart-home',
+              url: '/producto1',
+            },
+          ]
+        },
       ]
     },
 

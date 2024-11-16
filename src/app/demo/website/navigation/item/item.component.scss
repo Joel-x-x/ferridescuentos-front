@@ -1,4 +1,12 @@
 // Items
+.nav-link {
+  color: var(--blue-gray);
+}
+
 .nav-link:hover {
-  color: var(--color-lightgray);
+  color: var(--color-secondary);
+}
+
+.nav-link:focus {
+  color: var(--color-secondary);
 }
