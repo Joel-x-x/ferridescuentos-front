@@ -1,0 +1,53 @@
+    <!-- Category -->
+    <li class="item dropdown-item">
+      <span>
+        <i class="me-2" [ngClass]="item.icon"></i>
+        <a [routerLink]="">{{ item.title }}</a>
+        <i class="icon ti ti-chevron-down"></i>
+      </span>
+      <!-- Categories -->
+      <ul class="dropdown-content">
+        @for(title of item.children; track $index) {
+          <li class="item dropdown-item category">
+            <span>
+              <i class="me-2" [ngClass]="title.icon"></i>
+              <a routerLink="">{{ title.title }}</a>
+              <!-- Icon Plus -->
+              <i class="ti ti-plus"></i>
+            </span>
+            <!-- Submenu -->
+            <ul class="dropdown-content category-content">
+              @for(category of title.children; track $index) {
+                <li class="item">
+                  <span>
+                    <i class="me-2" [ngClass]="category.icon"></i>
+                    <a [routerLink]="category.url">{{ category.title }}</a>
+                  </span>
+                </li>
+              }
+              <!-- <li class="item dropdown-item">
+                <i class="ti ti-caret-down"></i>
+                <a href="" routerLink="">Submenu menu 1</a>
+              </li>
+              <li class="item dropdown-item">
+                <i class="ti ti-caret-down"></i>
+                <a href="" routerLink="">Submenu menu 1</a>
+              </li>
+              <li class="item dropdown-item">
+                <i class="ti ti-caret-down"></i>
+                <a href="" routerLink="">Submenu menu 1</a>
+              </li> -->
+            </ul>
+          </li>
+        }
+
+        <!-- <li class="item">
+          <i class="ti ti-caret-down"></i>
+          <a href="" routerLink="">Submenu1</a>
+        </li>
+        <li class="item">
+          <i class="ti ti-caret-down"></i>
+          <a href="" routerLink="">Submenu1</a>
+        </li> -->
+      </ul>
+    </li>

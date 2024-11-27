@@ -1,0 +1,86 @@
+@import '../../../variables.scss';
+
+// Reusable element in the other components
+.item {
+  display: block;
+  width: 100vw;
+  padding: 2rem 0;
+  text-decoration: none;
+  transition: all .3s ease;
+  cursor: pointer;
+  font-weight: bold;
+
+  span {
+    a {
+      color: $color-text;
+    }
+
+    padding-left: 2rem;
+  }
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+  }
+}
+
+
+.dropdown-content {
+  background-color: $color-secondary;
+  padding: 0;
+  margin-top: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+
+  .item {
+    font-weight: 500;
+  }
+}
+
+.dropdown-item {
+  padding-bottom: 0 !important;
+
+  .icon {
+    display: inline-block;
+    /* Asegura que el icono pueda ser transformado */
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(0deg);
+  }
+}
+
+.dropdown-item:hover {
+  .dropdown-content {
+    max-height: 1000px;
+    transition: max-height 0.4s ease-in;
+  }
+
+  .icon {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+// Category
+.category {
+  span {
+    padding-left: 4rem;
+  }
+}
+
+.category-content {
+  max-height: 0 !important;
+  overflow: hidden !important;
+  transition: max-height .4s ease-out !important;
+
+  .item {
+    padding-bottom: 2rem !important;
+    padding-left: 2rem;
+  }
+}
+
+.category:hover {
+  .category-content {
+    max-height: 1000px !important;
+    transition: max-height 0.4s ease-in !important;
+  }
+}

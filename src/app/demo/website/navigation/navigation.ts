@@ -19,17 +19,31 @@ export interface NavigationItem {
 export class Navigation {
   private NavigationItems: NavigationItem[] = [
     {
-      id: 'home',
-      title: 'Home',
+      id: 'inicio',
+      title: 'Inicio',
       type: 'item',
-      url: '/home',
+      url: '/Inicio',
       icon: 'ti ti-smart-home'
+    },
+    {
+      id: 'nosotros',
+      title: 'Sobre nosotros',
+      type: 'item',
+      url: '/Nosotros',
+      icon: 'ti ti-users-group'
+    },
+    {
+      id: 'ubicacion',
+      title: 'Ubicación',
+      type: 'item',
+      url: '/Ubicacion',
+      icon: 'ti ti-map-pin'
     },
     {
       id: 'productos',
       title: 'Productos',
       type: 'dropdown',
-      icon: 'ti ti-smart-home',
+      icon: 'ti ti-building-store',
       url: '/productos',
       children: [
         {
@@ -52,7 +66,7 @@ export class Navigation {
       id: 'servicios',
       title: 'Servicios',
       type: 'categories',
-      icon: 'ti ti-smart-home',
+      icon: 'ti ti-hand-move',
       url: '/servicios',
       children: [
         {

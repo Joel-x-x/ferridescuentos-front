@@ -1,0 +1,19 @@
+@import '../../../variables.scss';
+
+.item {
+  display: block;
+  width: 100vw;
+  padding: 2rem 0 2rem 2rem;
+  text-decoration: none;
+  transition: all .3s ease;
+  cursor: pointer;
+  font-weight: bold;
+
+  a {
+    color: $color-text;
+  }
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+  }
+}

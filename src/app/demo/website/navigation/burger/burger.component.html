@@ -1,0 +1,29 @@
+<button
+  (click)="show = !show"
+  class="burger hamburger hamburger--elastic"
+  [class.is-active]="isActive"
+  (click)="toggleMenu()"
+  type="button"
+  aria-label="Menu"
+  aria-controls="navigation"
+>
+  <span class="hamburger-box burger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+<aside class="panel" [class.show]="show">
+  <ul class="menu">
+  @for(item of navigationItems; track $index) {
+    @if(item.type === "item") {
+      <app-item [item]="item"></app-item>
+    }
+    @if(item.type === "dropdown") {
+      <app-dropdown [item]="item"></app-dropdown>
+    }
+    @if(item.type === "categories") {
+      <app-category [item]="item"></app-category>
+    }
+  }
+  </ul>
+</aside>

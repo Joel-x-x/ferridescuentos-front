@@ -1,14 +1,16 @@
+@import '../../variables.scss';
+
 // Items
 .nav-link {
-  color: var(--blue-gray);
+  color: $color-bluegray;
 }
 
 .nav-link:hover {
-  color: var(--color-secondary);
+  color: $color-orange-middle;
 }
 
 .nav-link:focus {
-  color: var(--color-secondary);
+  color: $color-orange-middle;
 }
 
 // Dropdown
@@ -31,7 +33,7 @@
 
     .dropdown-item {
       &:active {
-        background-color: var(--color-secondary);
+        background-color: $color-secondary;
       }
     }
   }

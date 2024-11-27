@@ -1,32 +1,60 @@
+@import '../variables.scss';
+
 /* styles.css */
 #mainNavbar {
   transition: transform 0.3s ease, opacity 0.3s ease;
-  /* Transiciones suaves */
+  z-index: 200;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+
+  // Top menu
+  .topmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 25px;
+    background-color: $color-secondary;
+    display: flex;
+    justify-content: end;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    .topmenu-container {
+      color: $color-background;
+      display: flex;
+      width: 40%;
+      flex-direction: row;
+      justify-content: space-around;
+
+      @media (max-width: 1100px) {
+        width: 60%;
+      }
+    }
+  }
 }
 
 .hidden {
   transform: translateY(-100%);
-  /* Esconde el navbar hacia arriba */
   opacity: 0;
-  /* Desvanece el navbar */
 }
 
 .visible {
   transform: translateY(0);
-  /* Muestra el navbar en su posición original */
   opacity: 1;
-  /* Aumenta la opacidad del navbar */
 }
 
-// Sidebar menu
 .spacer {
   flex: 1 1 auto;
-  /* Espaciador para empujar el contenido a la derecha */
 }
 
 .content {
   padding-top: 64px;
-  /* Ajusta según la altura de tu navbar */
 }
 
 .category {
@@ -39,16 +67,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: var(--color-background);
-  color: var(--color-blugray);
-  font-size: var(--font-size-large);
+  background-color: $color-background;
+  color: $color-bluegray;
+  font-size: $font-size-large;
   font-weight: 600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   .navbar-brand img {
-    width: 275px;
+    width: 325px;
     height: 90px;
+
+    @media (max-width: $phone) {
+      width: 275px;
+    }
   }
+
   .navbar-nav {
     padding-top: 2rem;
   }
@@ -59,8 +92,12 @@
     justify-content: flex-start;
     cursor: pointer;
 
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
     .nav-link:hover {
-      color: var(--color-lightgray);
+      color: $color-lightgray;
     }
 
   }

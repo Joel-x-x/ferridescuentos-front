@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+// Size variables
+$laptop: 1100px;
+$tablet: 800px;
+$phone: 500px;
+
+// Globas Ferridescuentos
+/* Variables Globales */
+// Variables de colores
+$color-primary: #FF5C00;
+$color-secondary: #FF3F00;
+$color-orange-dark: #891322;
+$color-orange-middle: #AB131C;
+$color-khaki: #BEB7A4;
+$color-lightgray: #B1C2CF;
+$color-bluegray: #262D37;
+$color-danger: #e74c3c;
+$color-success: #179049;
+
+// Variables de fondo y texto (tema claro por defecto)
+$color-background: #FFFFFC;
+$color-text: #1D2125;
+
+// Fuentes
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-size-small: 0.875rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.25rem;
+
+// Temas
+$theme-light: (
+  color-background: #FFFFFC,
+  color-text: #1D2125
+);
+
+$theme-dark: (
+  color-background: #1D2125,
+  color-text: #B1C2CF
+);

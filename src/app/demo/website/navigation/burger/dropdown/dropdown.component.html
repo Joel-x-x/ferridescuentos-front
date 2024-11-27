@@ -1,0 +1,19 @@
+<!-- Dropdown -->
+<li class="item dropdown-item">
+  <span>
+    <i class="me-2" [ngClass]="item.icon"></i>
+    <a class="me-1" [routerLink]="item.url">{{ item.title }}</a>
+    <i class="icon ti ti-chevron-down"></i>
+  </span>
+  <ul class="dropdown-content">
+    @for (subitem of item.children; track $index) {
+      <!-- Item -->
+      <li class="item">
+        <span>
+          <i class="me-2" [ngClass]="item.icon"></i>
+          <a [routerLink]="item.url">{{ item.title }}</a>
+        </span>
+      </li>
+    }
+  </ul>
+</li>

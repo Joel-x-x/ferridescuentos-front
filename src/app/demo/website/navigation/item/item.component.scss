@@ -1,12 +1,14 @@
+@import '../../variables.scss';
+
 // Items
 .nav-link {
-  color: var(--blue-gray);
+  color: $color-bluegray;
 }
 
 .nav-link:hover {
-  color: var(--color-secondary);
+  color: $color-orange-middle;
 }
 
 .nav-link:focus {
-  color: var(--color-secondary);
+  color: $color-orange-middle;
 }
