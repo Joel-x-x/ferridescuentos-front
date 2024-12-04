@@ -3,10 +3,22 @@
 // Items
 .nav-link {
   color: $color-bluegray;
+
+  .icon {
+    display: inline-block;
+    /* Ensures that the icon can be transformed */
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(0deg);
+  }
 }
 
 .nav-link:hover {
   color: $color-orange-middle;
+
+  .icon {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+  }
 }
 
 .nav-link:focus {
@@ -20,9 +32,12 @@
   .dropdown-menu {
     min-width: 200px;
     overflow-y: scroll;
-    display: none;
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
     position: fixed;
-    top: 100px;
+    top: 110px;
     transform: translate(-38%);
     left: 50%;
     z-index: 1000;
@@ -31,11 +46,18 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity .4s ease;
+
+    @media (max-width: $laptop) {
+      top: 215px;
+    }
   }
 
   /* Muestra el menú cuando el dropdown está en hover */
   &:hover .dropdown-menu {
-    display: block;
+    // display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   .space-line {

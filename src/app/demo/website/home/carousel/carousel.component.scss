@@ -1,0 +1,73 @@
+@import '../../variables.scss';
+
+.container {
+  margin: 5rem auto;
+  overflow: scroll;
+  flex-wrap: nowrap;
+
+  .title {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      top: 2.5rem;
+      left: 0;
+      border-radius: 5px;
+      height: 10px;
+      position: absolute;
+      background-color: $color-secondary;
+      width: 20%;
+    }
+  }
+
+  .brand-container {
+    padding-bottom: 5rem;
+    display: flex;
+    // Repeat infinitely
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+
+    .brand {
+      max-width: 175px;
+      min-width: 175px;
+      height: 175px;
+      transition-duration: .3s;
+      margin-right: 30px;
+      display: grid;
+      place-items: center;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        filter: grayscale(100%);
+        transition-duration: .7s;
+
+        &:hover {
+          filter: grayscale(0%);
+          transform: scale(1.2);
+        }
+      }
+    }
+
+  }
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    // This calc depends of the number of items
+    transform: translateX(calc(-205px * 7));
+    -webkit-transform: translateX(calc(-205px * 7));
+  }
+}

@@ -4,6 +4,7 @@
   <a class="nav-link dropdown-toggle" [routerLink]="item.url" role="button">
     <i [ngClass]="item.icon"></i>
     {{ item.title }}
+    <i class="icon ti ti-chevron-down"></i>
   </a>
   <ul class="dropdown-menu">
     @for (subitem of item.children; track $index) {

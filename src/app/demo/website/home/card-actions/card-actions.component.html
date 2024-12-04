@@ -1,0 +1,22 @@
+<section class="container">
+  <div class="cards-container">
+    <!-- Personalised -->
+    <div class="card">
+      <h4 class="title">¡Haz tu pedido!</h4>
+      <img src="../../../../../assets/images/website/card-actions/delivery.png" alt="">
+      <p class="text">
+        Envíos a domicilio
+        <span>solo sector Ambato.</span>
+      </p>
+    </div>
+    @for(card of cards; track $index) {
+      <div class="card">
+        <h4 class="title">{{ card.title }}</h4>
+        <img [src]="card.image" alt="Imagen">
+        <p class="text">
+          {{ card.text }}
+        </p>
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.container {
+  margin-top: 5rem;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 1rem;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: $phone) {
+    gap: .5rem;
+  }
+
+  .card {
+    aspect-ratio: 1; // 1:1 ratio in height and width
+    border: solid 5px $color-primary;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+
+    .title {
+      color: $color-primary;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .text {
+      color: #1E3E62;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    img {
+      object-fit: cover;
+      width: 60%;
+    }
+  }
+}

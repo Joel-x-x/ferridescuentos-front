@@ -6,6 +6,7 @@
   font-family: 'tabler-icons';
   font-style: normal;
   font-weight: 400;
+  display: block;
   src: url(tabler/tabler-icons.eot?#iefix);
   src:
     url(tabler/tabler-icons.eot?#iefix) format('embedded-opentype'),

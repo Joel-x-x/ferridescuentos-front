@@ -1,1 +1,17 @@
-<p>carrusel works!</p>
+<!-- Carousel -->
+ <section class="container">
+  <!-- <h3 class="title">Nuestras marcas</h3> -->
+   <app-title-section [title]="'Nuestras marcas'"></app-title-section>
+  <div class="brand-container">
+    @for(image of images; track $index) {
+      <div class="brand">
+        <img [src]="image" alt="Logo">
+      </div>
+    }
+    @for(image of images; track $index) {
+      <div class="brand">
+        <img [src]="image" alt="Logo">
+      </div>
+    }
+  </div>
+ </section>

@@ -3,10 +3,22 @@
 // Items
 .nav-link {
   color: $color-bluegray;
+
+  .icon {
+    display: inline-block;
+    /* Asegura que el icono pueda ser transformado */
+    transition: transform 0.4s ease-in-out;
+    transform: rotate(0deg);
+  }
 }
 
 .nav-link:hover {
   color: $color-orange-middle;
+
+  .icon {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+  }
 }
 
 .nav-link:focus {
@@ -18,7 +30,10 @@
   position: relative;
 
   .dropdown-menu {
-    display: none;
+    // display: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 100%;
     left: -100px;
@@ -29,6 +44,7 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity .4s ease;
 
 
     .dropdown-item {
@@ -40,7 +56,9 @@
 
   /* Muestra el menú cuando el dropdown está en hover */
   &:hover .dropdown-menu {
-    display: block;
+    // display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
 }

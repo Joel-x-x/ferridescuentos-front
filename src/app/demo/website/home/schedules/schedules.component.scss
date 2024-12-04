@@ -1,0 +1,60 @@
+@import '../../variables.scss';
+
+.container {
+  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .schedule-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+
+    background-color: $color-background;
+    border-radius: 5px;
+    padding: 2rem 0;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+
+    .schedule {
+      padding: 1rem 4rem 1rem 4rem;
+      font-weight: 600;
+      font-size: 17px;
+      color: $color-text;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      // margin-bottom: 1.5rem;
+      border-radius: 3px;
+      border-bottom: solid 3px /* #c7c7c7*/lighten($color-blue-middle, 75);
+
+      @media (max-width: $tablet) {
+        font-size: 15px;
+      }
+      @media (max-width: $phone) {
+        font-size: 13px;
+      }
+
+      &:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      &.red {
+        color: $color-danger;
+      }
+
+      &.today {
+        background-color: lighten($color-secondary, 10);
+        color: #fff;
+      }
+    }
+  }
+
+}
