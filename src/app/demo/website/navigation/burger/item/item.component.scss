@@ -8,9 +8,11 @@
   transition: all .3s ease;
   cursor: pointer;
   font-weight: bold;
+  color: $color-text;
+  transition: none;
 
   a {
-    color: $color-text;
+    color: inherit;
   }
 
   &:hover {

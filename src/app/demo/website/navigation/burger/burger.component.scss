@@ -37,13 +37,12 @@
   left: 0;
   // Transition
   transform: translate(0, -100%);
-  transition: all .5s ease;
+  transition: transform .5s ease;
   background-color: $color-secondary;
   font-size: $font-size-large;
 
-
   &.show {
-    transition: all .5s ease;
+    transition: transform .5s ease;
     transform: translate(0, 0);
   }
 
@@ -55,6 +54,12 @@
     align-items: start;
     list-style: none;
     padding: 0;
+  }
+
+  .dark-mode-burguer {
+    position: absolute;
+    bottom: 12vh;
+    right: 1vw;
   }
 
 }

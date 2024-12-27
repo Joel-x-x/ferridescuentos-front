@@ -14,7 +14,7 @@ export class SchedulesComponent implements AfterViewInit {
   today: boolean;
 
   constructor(private renderer: Renderer2) {}
-
+  // TODO: Revisar la logica del cambio de horario
   ngOnInit(): void {
     this.newDay();
   }

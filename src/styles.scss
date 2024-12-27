@@ -40,15 +40,42 @@ body {
   font-family: $font-primary !important;
 }
 
-body {
-  background-color: $color-background; // Pediente modificar con el modo oscuro
-  margin: 0;
-}
-
 p {
   font-size: 1rem;
 }
 
-// .mat-typography {
-//   font-family: $font-primary;
-// }
+// TODO: Indagar porque no aplica el dark a los horarios
+// Dark Mode
+@mixin apply-theme($theme) {
+  background-color: map-get($theme, color-background);
+  color: map-get($theme, color-text)!important;
+  border-color: map-get($map: $theme, $key: color-outfit)!important;
+}
+
+// Light theme
+body
+body.darkmode .nav-content,
+body.darkmode .nav-content .nav-link,
+body.darkmode .card {
+  @include apply-theme($theme-light);
+}
+
+// Dark theme
+body.darkmode,
+//Nav
+body.darkmode .nav-content,
+body.darkmode .nav-content .nav-link,
+// Car
+body.darkmode .card,
+// Schedule
+body.darkmode .container .schedule-container .schedule,
+body.darkmode .container .schedule-container,
+// Menus
+body.darkmode .nav-content .dropdown-menu,
+body.darkmode .nav-content .dropdown-menu .dropdown-item,
+// Burger
+body.darkmode .panel,
+body.darkmode .panel .item {
+  @include apply-theme($theme-dark);
+}
+

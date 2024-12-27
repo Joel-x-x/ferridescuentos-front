@@ -1,0 +1,11 @@
+<button class="toggle-btn" (click)="toggleIcon()" (click)="toggleTheme()">
+  <i
+    [ngClass]="{
+      'ti': true,
+      'ti-sun-high': isSun,
+      'ti-moon': !isSun,
+      'icon': true,
+      'animated': isAnimated
+    }">
+  </i>
+</button>

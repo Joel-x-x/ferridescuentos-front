@@ -15,31 +15,26 @@ export class SliderComponent implements AfterViewInit {
 
   sliderObject = [
     {
-      title: 'Title',
-      text: 'lorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e wekelorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e wekelorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e weke',
-      image: '../../../../../assets/images/website/slider/1.jpg'
+      title: '',
+      text: '',
+      alt: 'Imagen cementos chimborazo',
+      image: '../../../../../assets/images/website/slider/cementos.png',
+      imageTablet: '../../../../../assets/images/website/slider/cementos-tablet.png'
     },
     {
-      title: 'Title',
-      text: 'lorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e weke',
-      image: '../../../../../assets/images/website/slider/2.jpg'
+      title: '',
+      text: '',
+      alt: 'Imagen aceros correas, varillas, etc.',
+      image: '../../../../../assets/images/website/slider/aceros.png',
+      imageTablet: '../../../../../assets/images/website/slider/aceros-tablet.png'
     },
     {
-      title: 'Title',
-      text: 'lorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e weke',
-      image: '../../../../../assets/images/website/slider/3.jpg'
+      title: '',
+      text: '',
+      alt: 'Imagen azulejos, porcelanatos',
+      image: '../../../../../assets/images/website/slider/azulejos.png',
+      imageTablet: '../../../../../assets/images/website/slider/azulejos-tablet.png'
     },
-    {
-      title: 'Title',
-      text: 'lorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e weke',
-      image: '../../../../../assets/images/website/slider/4.jpg'
-    },
-    {
-      title: 'Title',
-      text: 'lorem impusmsdkfljs dlslsl jkpqoe  sls qew.,e weke',
-      image: '../../../../../assets/images/website/slider/5.jpg'
-    },
-
   ];
 
   lengthItems = 0;

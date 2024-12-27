@@ -1,17 +1,19 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { Navigation } from './navigation';
 import { NavigationItem } from './navigation';
 import { CommonModule } from '@angular/common';
 import { ItemComponent } from './item/item.component';
 import { ItemDropdownComponent } from './item-dropdown/item-dropdown.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [CommonModule, ItemComponent, ItemDropdownComponent, CategoriesComponent],
+  imports: [CommonModule, ItemComponent, ItemDropdownComponent, CategoriesComponent, DarkModeToggleComponent],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class NavigationComponent implements OnInit {
 

@@ -22,21 +22,21 @@ export class Navigation {
       id: 'inicio',
       title: 'Inicio',
       type: 'item',
-      url: '/Inicio',
+      url: '/home',
       icon: 'ti ti-smart-home'
     },
     {
       id: 'nosotros',
       title: 'Sobre nosotros',
       type: 'item',
-      url: '/Nosotros',
+      url: '/about',
       icon: 'ti ti-users-group'
     },
     {
       id: 'ubicacion',
       title: 'Ubicación',
       type: 'item',
-      url: '/Ubicacion',
+      url: '/location',
       icon: 'ti ti-map-pin'
     },
     {
@@ -62,169 +62,170 @@ export class Navigation {
         }
       ]
     },
-    {
-      id: 'servicios',
-      title: 'Servicios',
-      type: 'categories',
-      icon: 'ti ti-hand-move',
-      url: '/servicios',
-      children: [
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-        {
-          id: 'categoria1',
-          title: 'Categoria 1',
-          type: 'title',
-          icon: 'ti ti-smart-home',
-          children: [
-            {
-              id: 'producto1',
-              title: 'Producto 1',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-            {
-              id: 'producto2',
-              title: 'Producto 2',
-              type: 'item',
-              icon: 'ti ti-smart-home',
-              url: '/producto1',
-            },
-          ]
-        },
-      ]
-    },
+    // Servicios
+    // {
+    //   id: 'servicios',
+    //   title: 'Servicios',
+    //   type: 'categories',
+    //   icon: 'ti ti-hand-move',
+    //   url: '/servicios',
+    //   children: [
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //     {
+    //       id: 'categoria1',
+    //       title: 'Categoria 1',
+    //       type: 'title',
+    //       icon: 'ti ti-smart-home',
+    //       children: [
+    //         {
+    //           id: 'producto1',
+    //           title: 'Producto 1',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //         {
+    //           id: 'producto2',
+    //           title: 'Producto 2',
+    //           type: 'item',
+    //           icon: 'ti ti-smart-home',
+    //           url: '/producto1',
+    //         },
+    //       ]
+    //     },
+    //   ]
+    // },
 
     // {
     //   id: 'dashboard',

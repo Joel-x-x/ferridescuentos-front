@@ -5,11 +5,12 @@ import { Navigation, NavigationItem } from '../navigation';
 import { ItemComponent } from './item/item.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { CategoryComponent } from './category/category.component';
+import { DarkModeToggleComponent } from '../dark-mode-toggle/dark-mode-toggle.component';
 
 @Component({
   selector: 'app-burger',
   standalone: true,
-  imports: [NgClass, RouterLink, ItemComponent, DropdownComponent, CategoryComponent, CategoryComponent],
+  imports: [NgClass, RouterLink, ItemComponent, DropdownComponent, CategoryComponent, CategoryComponent, DarkModeToggleComponent],
   templateUrl: './burger.component.html',
   styleUrl: './burger.component.scss'
 })

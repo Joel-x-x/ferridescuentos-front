@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+
+  .icon {
+    color: #b88b1d; // Sun
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), 4px 8px 20px rgba(255,245,61,0.25);
+    transition: transform 0.7s ease, color 0.7s ease;
+  }
+
+  .ti-moon {
+    color: #081320; // Moon
+    text-shadow: none;
+    // text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5), -2px 9px 20px #FF3CEF;
+  }
+
+  .icon.animated {
+    animation: spin 0.7s ease-in-out;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

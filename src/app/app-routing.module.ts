@@ -14,6 +14,14 @@ const routes: Routes = [
     loadComponent: () => import('./demo/website/home/home.component').then( m => m.HomeComponent)
   },
   {
+    path: 'about',
+    loadComponent: () => import('./demo/website/about/about.component').then( m => m.AboutComponent)
+  },
+  {
+    path: 'location',
+    loadComponent: () => import('./demo/website/location/location.component').then( m => m.LocationComponent)
+  },
+  {
     path: '',
     component: AdminComponent,
     children: [

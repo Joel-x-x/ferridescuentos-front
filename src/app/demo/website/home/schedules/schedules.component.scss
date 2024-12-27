@@ -13,7 +13,7 @@
     align-items: center;
     width: 500px;
 
-    background-color: $color-background;
+    // background-color: $color-background;
     border-radius: 5px;
     padding: 2rem 0;
 
@@ -31,7 +31,7 @@
       width: 100%;
       // margin-bottom: 1.5rem;
       border-radius: 3px;
-      border-bottom: solid 3px /* #c7c7c7*/lighten($color-blue-middle, 75);
+      border-bottom: solid 3px $color-outfit;
 
       @media (max-width: $tablet) {
         font-size: 15px;
@@ -43,11 +43,11 @@
       &:last-child {
         border: none;
         margin-bottom: 0;
-        padding-bottom: 0;
+        // padding-bottom: 0;
       }
 
       &.red {
-        color: $color-danger;
+        color: $color-danger!important;
       }
 
       &.today {

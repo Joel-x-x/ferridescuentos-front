@@ -1,0 +1,56 @@
+@import '../variables.scss';
+
+.footer {
+  background-color: $color-blue-middle;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .navbar-brand img {
+      padding-top: 2rem;
+      width: 80px!important;
+      height: 110px;
+
+      @media (max-width: $phone) {
+        width: 275px;
+      }
+    }
+
+    .copyright {
+      color: $color-lightgray;
+      font-weight: 500;
+      margin-top: 1rem;
+
+      @media (max-width: $phone) {
+        font-size: .8rem;
+      }
+    }
+
+  }
+
+  .social-media {
+    align-self: center;
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    a {
+      margin: 0 1rem;
+      color: $color-lightgray;
+      font-size: 2.5rem;
+    }
+  }
+}
+

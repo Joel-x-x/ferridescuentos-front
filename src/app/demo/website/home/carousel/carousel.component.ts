@@ -15,7 +15,7 @@ export class CarouselComponent {
     '../../../../../assets/images/website/carousel/disensa.jpeg',
     '../../../../../assets/images/website/carousel/adelca.png',
     '../../../../../assets/images/website/carousel/chimborazo.png',
-    '../../../../../assets/images/website/carousel/fv.webp',
+    '../../../../../assets/images/website/carousel/fv.png',
     '../../../../../assets/images/website/carousel/edesa.png',
     '../../../../../assets/images/website/carousel/holcim.png',
     '../../../../../assets/images/website/carousel/selvalegre.png',

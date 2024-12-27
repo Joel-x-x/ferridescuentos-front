@@ -3,7 +3,10 @@
   <div class="list" #sliderList>
     @for (slider of sliderObject; track $index) {
       <div class="item" #sliderItem>
-          <img [src]="slider.image" alt="Slide {{ $index + 1 }}">
+          <picture>
+            <source [srcset]="slider.imageTablet" media="(max-width: 800px)">
+            <img [src]="slider.image" alt="Slide {{slider.alt}}">
+          </picture>
           <div class="text-contain">
             <div class="title">
               {{ slider.title }}

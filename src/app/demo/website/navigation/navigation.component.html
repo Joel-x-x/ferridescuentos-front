@@ -1,4 +1,5 @@
 <!-- Navbar usando Angular Material -->
+<div class="space-nav"></div>
 <nav
   id="mainNavbar"
   class="fixed-top navbar p-3 nav-content"
@@ -11,21 +12,15 @@
     <div class="topmenu-container">
       <a class="d-flex justify-content-between" target="_blank">
         <i class="ti ti-device-mobile me-1"></i>
-        <p class="m-0">
-          098 681 6427 - 097 872 9311
-        </p>
+        <p class="m-0">098 681 6427 - 097 872 9311</p>
       </a>
       <a class="d-flex justify-content-between" target="_blank">
         <i class="ti ti-phone me-1"></i>
-        <p class="m-0">
-          2489106
-        </p>
+        <p class="m-0">2489106</p>
       </a>
       <a href="https://maps.app.goo.gl/AodrV2fMe3UJbAZu8" class="d-flex justify-content-between" target="_blank">
         <i class="ti ti-map-pin me-1"></i>
-        <p class="m-0">
-          Vía Baños Km 8
-        </p>
+        <p class="m-0">Vía Baños Km 8</p>
       </a>
     </div>
   </div>
@@ -39,20 +34,22 @@
   <div class="navbar-items navbar-expand">
     <ul class="navbar-nav me-auto flex-row">
       @for (item of navigationItems; track $index) {
-        @if (item.type === "item") {
-          <app-item [item]="item" ></app-item>
+        @if (item.type === 'item') {
+          <app-item [item]="item"></app-item>
         }
 
-        @if (item.type === "dropdown") {
-          <app-item-dropdown [item]="item" ></app-item-dropdown>
+        @if (item.type === 'dropdown') {
+          <app-item-dropdown [item]="item"></app-item-dropdown>
         }
 
-        @if(item.type === "categories") {
-          <app-categories [item]="item" ></app-categories>
+        @if (item.type === 'categories') {
+          <app-categories [item]="item"></app-categories>
         }
       }
+
+      <li class="darkmode-button">
+        <app-dark-mode-toggle></app-dark-mode-toggle>
+      </li>
     </ul>
   </div>
-
 </nav>
-

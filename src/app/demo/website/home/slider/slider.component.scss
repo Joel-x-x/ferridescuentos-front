@@ -1,11 +1,10 @@
 @import '../../variables.scss';
 
 .slider {
-  width: 100vw;
-  max-width: 100vw;
+  // width: 100vw;
   height: 500px;
   margin: auto;
-  margin-top: 130px;
+  // margin-top: 90px; // Navbar height
   position: relative;
   overflow: hidden;
 
@@ -64,7 +63,12 @@
   width: 100vw;
   max-width: 100vw;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+
+  @media (max-width: $tablet) {
+  //   object-fit: cover;
+    height: 132%;
+  }
 }
 
 .slider .buttons {
@@ -74,6 +78,10 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $phone) {
+    top: 55%;
+  }
 }
 
 .slider .buttons button {
@@ -103,7 +111,7 @@
   list-style: none;
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: $color-secondary;
   margin: 10px;
   border-radius: 20px;
   transition: 0.5s;

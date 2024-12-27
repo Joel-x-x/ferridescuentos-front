@@ -9,10 +9,12 @@
   transition: all .3s ease;
   cursor: pointer;
   font-weight: bold;
+  color: $color-text;
+  transition: none;
 
   span {
     a {
-      color: $color-text;
+      color: inherit;
     }
 
     padding-left: 2rem;

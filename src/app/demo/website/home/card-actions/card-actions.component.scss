@@ -20,12 +20,13 @@
 
   .card {
     aspect-ratio: 1; // 1:1 ratio in height and width
-    border: solid 5px $color-primary;
+    border: solid 5px $color-primary!important;
     border-radius: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: .5rem;
+    transition: none;
 
     .title {
       color: $color-primary;
@@ -33,8 +34,6 @@
       font-size: 1.5rem;
     }
     .text {
-      color: #1E3E62;
-
       span {
         font-weight: bold;
       }
