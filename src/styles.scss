@@ -75,7 +75,9 @@ body.darkmode .nav-content .dropdown-menu,
 body.darkmode .nav-content .dropdown-menu .dropdown-item,
 // Burger
 body.darkmode .panel,
-body.darkmode .panel .item {
+body.darkmode .panel .item,
+// Company
+body.darkmode #style-card {
   @include apply-theme($theme-dark);
 }
 
