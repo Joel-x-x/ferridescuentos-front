@@ -39,29 +39,29 @@ export class Navigation {
       url: '/location',
       icon: 'ti ti-map-pin'
     },
-    {
-      id: 'productos',
-      title: 'Productos',
-      type: 'dropdown',
-      icon: 'ti ti-building-store',
-      url: '/productos',
-      children: [
-        {
-          id: 'producto1',
-          title: 'Producto 1',
-          type: 'item',
-          icon: 'ti ti-smart-home',
-          url: '/producto1',
-        },
-        {
-          id: 'producto2',
-          title: 'Producto 2',
-          type: 'item',
-          icon: 'ti ti-smart-home',
-          url: '/producto2',
-        }
-      ]
-    },
+    // {
+    //   id: 'productos',
+    //   title: 'Productos',
+    //   type: 'dropdown',
+    //   icon: 'ti ti-building-store',
+    //   url: '/productos',
+    //   children: [
+    //     {
+    //       id: 'producto1',
+    //       title: 'Producto 1',
+    //       type: 'item',
+    //       icon: 'ti ti-smart-home',
+    //       url: '/producto1',
+    //     },
+    //     {
+    //       id: 'producto2',
+    //       title: 'Producto 2',
+    //       type: 'item',
+    //       icon: 'ti ti-smart-home',
+    //       url: '/producto2',
+    //     }
+    //   ]
+    // },
     // Servicios
     // {
     //   id: 'servicios',

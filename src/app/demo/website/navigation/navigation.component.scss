@@ -4,6 +4,10 @@
 .space-nav {
   height: 165px;
 
+  @media (max-width: 1150px) {
+    height: 245px;
+  }
+
   @media (max-width: $laptop) {
     height: 150px;
   }
@@ -78,7 +82,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: $color-background;
+  backdrop-filter: blur(10px); /* Aplica el desenfoque */
+  background: $color-background-transparent;
   color: $color-text;
   font-size: $font-size-large;
   font-weight: 500;
@@ -90,11 +95,17 @@
 
   .navbar-brand img {
     padding-top: 2rem;
-    width: 325px;
+    max-width: 325px;
     height: 110px;
+    transition: transform .2s ease;
 
     @media (max-width: $phone) {
       width: 275px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
     }
   }
 

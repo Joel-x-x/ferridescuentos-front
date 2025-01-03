@@ -27,7 +27,17 @@
 
   <!-- Logo -->
   <a class="navbar-brand" href="#">
-    <img src="../../../../assets/images/logo.svg" alt="Logo ferridescuentos" />
+    <picture>
+      <!-- Imagen para pantallas de al menos 1100px -->
+      <source srcset="../../../../assets/images/logo-large.svg" media="(min-width: 1150px)" />
+
+      <!-- Imagen para pantallas entre 800px y 1099px -->
+      <source srcset="../../../../assets/images/favicon.svg" media="(min-width: 800px)" />
+
+      <!-- Imagen de fallback para pantallas menores a 800px -->
+      <img src="../../../../assets/images/logo.svg" alt="Logo Ferridescuentos" />
+    </picture>
+
   </a>
 
   <!-- Menus -->

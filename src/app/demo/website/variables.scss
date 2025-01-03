@@ -24,6 +24,7 @@ $color-success: #179049;
 
 // Variables de fondo y texto (tema claro por defecto)
 $color-background: #FFFFFC;
+$color-background-transparent: rgba(255, 255, 255, 0.3);
 $color-text: #1D2125;
 $color-outfit: #e6e6e6;
 
@@ -36,15 +37,16 @@ $font-size-large: 1.25rem;
 
 // Temas
 $theme-light: (
-  color-background: #FFFFFC,
+  color-background: rgb(255, 255, 252),
+  // color-background-transparent: rgba(255, 255, 255, 0.3),
   color-text: #1D2125,
   color-outfit: #e6e6e6,
   );
 
-  $theme-dark: (
-    color-background: #1D2125,
-    color-text: #d8dfe4,
-    color-outfit: #333b46,
+$theme-dark: (
+  color-background: rgb(29, 33, 37),
+  color-text: #d8dfe4,
+  color-outfit: #333b46,
 );
 
 // $theme-dark-card: (
